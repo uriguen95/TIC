@@ -18,8 +18,8 @@ sensor = BMP085.BMP085()
 
 def cpu_ram(variable1,cont):
     while True:
-        #cpu = psutil.cpu_percent(interval=None)
-        #ram = psutil.virtual_memory().percent
+        
+        #Obtener datos del sensor
         temp = sensor.read_temperature()
         pressure = sensor.read_pressure()
         altitude = sensor.read_altitude()
